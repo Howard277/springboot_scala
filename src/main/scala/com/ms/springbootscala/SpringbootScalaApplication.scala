@@ -11,9 +11,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2
 @EnableTransactionManagement
 @SpringBootApplication
 @EnableSwagger2
-class SpringbootScalaApplication {
-
-}
+class SpringbootScalaApplication
 
 object SpringbootScalaApplication extends App{
   SpringApplication.run(classOf[SpringbootScalaApplication])
