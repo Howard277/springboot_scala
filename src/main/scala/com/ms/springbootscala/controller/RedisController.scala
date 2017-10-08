@@ -18,7 +18,7 @@ class RedisController {
   /**
     * 注入redis模板
     */
-  @Autowired
+  @Autowired(required = false)
   var redisTemplate: RedisTemplate[String, AnyRef] = _
 
   /**

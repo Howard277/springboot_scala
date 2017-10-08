@@ -1,13 +1,14 @@
 package com.ms.springbootscala.config
 
 import org.springframework.beans.factory.annotation.{Autowired, Value}
-import org.springframework.context.annotation.{Bean, Configuration}
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty
+import org.springframework.context.annotation.{Bean, Conditional, Configuration}
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory
 import org.springframework.data.redis.core.RedisTemplate
 import redis.clients.jedis.JedisPoolConfig
 
 /**
-  * redis配置类
+  * redis配置类，用于提供RedisTemplate
   * Created by wuketao on 2017/9/20.
   */
 @Configuration
