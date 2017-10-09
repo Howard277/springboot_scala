@@ -1,6 +1,6 @@
 package com.ms.springbootscala.controller
 
-import java.util.List
+import java.util.{Date, List, UUID}
 import javax.validation.Valid
 
 import com.ms.springbootscala.service.UserService
@@ -12,6 +12,9 @@ import org.springframework.stereotype.Controller
 import org.springframework.validation.BindingResult
 import org.springframework.web.bind.annotation._
 import com.ms.springbootscala.entities._
+
+import scala.collection.mutable.ListBuffer
+
 /**
   * 用户控制器
   *
@@ -29,10 +32,22 @@ class UserController {
 
   @ApiOperation(value = "获取所有用户")
   @RequestMapping(value = Array("/list"), method = Array(RequestMethod.GET))
-  def list(): List[User] = {
-    var v = userService.findAll
-    log.info(v.toString())
-    v
+  def list(): Unit = {
+
+    var thread1 = new Thread() {
+      var listBuffer = new ListBuffer[User]
+
+      override def run(): Unit = {
+        while (true) {
+          listBuffer.+=(new User() {
+            name = UUID.randomUUID().toString();
+            birthday = new Date()
+            telephone = UUID.randomUUID().toString()
+          })
+          log.info("create user")
+        }
+      }
+    }.start()
   }
 
   @ApiOperation(value = "保存用户")

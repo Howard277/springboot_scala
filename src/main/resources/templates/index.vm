@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>测试页面</title>
+    ##注意：layer.js 一定要在jquery.js 之后引用
+    <script src="/js/jquery-1.8.2.js"></script>
+    <script src="/layer/layer.js"></script>
+</head>
+<body>
+<input type="button" value="提示" onclick="myalert('提示信息')"><br/>
+<script>
+    function myalert(msg) {
+        layer.alert(msg);
+    }
+</script>
+</body>
+</html>
