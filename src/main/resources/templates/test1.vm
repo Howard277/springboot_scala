@@ -1,0 +1,2 @@
+#set($layout ='/layout/layout_default.vm')
+<h1>测试页面1</h1>
