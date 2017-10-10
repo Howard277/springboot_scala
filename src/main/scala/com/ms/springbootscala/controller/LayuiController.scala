@@ -15,7 +15,7 @@ class LayuiController {
   @ApiOperation(value = "索引页面")
   @RequestMapping(path=Array("index","/"),method=Array(RequestMethod.GET))
   def index:ModelAndView={
-    var mav = new ModelAndView("/layout/layout_default")
+    var mav = new ModelAndView("/layout/layout")
     mav
   }
 

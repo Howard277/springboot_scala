@@ -1,13 +1,13 @@
 <html>
 <head>
-<title>测试页面</title>
+<title>$title</title>
 #parse('/layout/resources.vm')
 </head>
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
     #parse('/layout/header.vm')
 
-    #parse('/layout/sider.vm')
+    #parse('/layout/left.vm')
 
     <div class="layui-body">
         <!-- 内容主体区域 -->

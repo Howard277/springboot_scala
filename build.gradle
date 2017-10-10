@@ -47,8 +47,11 @@ dependencies {
     compile group: 'redis.clients', name: 'jedis', version: '2.9.0'
 
     // 配置velocity
-    compile group: 'org.apache.velocity', name: 'velocity', version: '1.7'
-    compile group: 'org.apache.velocity', name: 'velocity-tools', version: '2.0'
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-velocity
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-velocity', version: '1.4.7.RELEASE'
+//
+//    compile group: 'org.apache.velocity', name: 'velocity', version: '1.7'
+//    compile group: 'org.apache.velocity', name: 'velocity-tools', version: '2.0'
 
 
     compile "org.scala-lang:scala-library:2.11.7"
