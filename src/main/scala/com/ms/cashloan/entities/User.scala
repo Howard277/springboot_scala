@@ -1,4 +1,4 @@
-package com.ms.springbootscala.entities
+package com.ms.cashloan.entities
 
 import java.util.Date
 import javax.persistence.{Entity, GeneratedValue, Id}

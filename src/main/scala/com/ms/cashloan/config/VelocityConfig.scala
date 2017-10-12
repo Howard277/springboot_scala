@@ -1,4 +1,4 @@
-package com.ms.springbootscala.config
+package com.ms.cashloan.config
 
 import org.springframework.context.annotation.{Bean, Configuration}
 import org.springframework.web.servlet.view.velocity.VelocityLayoutViewResolver

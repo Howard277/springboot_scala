@@ -1,4 +1,4 @@
-package com.ms.springbootscala
+package com.ms.cashloan
 
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
@@ -11,8 +11,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2
 @EnableTransactionManagement
 @SpringBootApplication
 @EnableSwagger2
-class SpringbootScalaApplication
+class CashLoanApplication
 
-object SpringbootScalaApplication extends App{
-  SpringApplication.run(classOf[SpringbootScalaApplication])
+object CashLoanApplication extends App{
+  SpringApplication.run(classOf[CashLoanApplication])
 }

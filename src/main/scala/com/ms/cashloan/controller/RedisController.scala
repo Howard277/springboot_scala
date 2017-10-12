@@ -1,8 +1,8 @@
-package com.ms.springbootscala.controller
+package com.ms.cashloan.controller
 
 import java.util.Date
 
-import com.ms.springbootscala.entities.User
+import com.ms.cashloan.entities.User
 import io.swagger.annotations.ApiOperation
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.data.redis.core.RedisTemplate

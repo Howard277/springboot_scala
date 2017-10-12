@@ -1,11 +1,11 @@
-package com.ms.springbootscala.service
+package com.ms.cashloan.service
 
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
-import com.ms.springbootscala.entities._
+import com.ms.cashloan.entities._
 import scala.collection.mutable._
-import com.ms.springbootscala.repository._
+import com.ms.cashloan.repository._
 import scala.collection.JavaConverters._
 
 /**

@@ -1,9 +1,9 @@
-package com.ms.springbootscala.controller
+package com.ms.cashloan.controller
 
 import java.util.{Date, List, UUID}
 import javax.validation.Valid
 
-import com.ms.springbootscala.service.UserService
+import com.ms.cashloan.service.UserService
 import io.swagger.annotations.ApiOperation
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
@@ -11,7 +11,7 @@ import org.springframework.data.domain.Page
 import org.springframework.stereotype.Controller
 import org.springframework.validation.BindingResult
 import org.springframework.web.bind.annotation._
-import com.ms.springbootscala.entities._
+import com.ms.cashloan.entities._
 
 import scala.collection.mutable.ListBuffer
 

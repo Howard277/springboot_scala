@@ -1,4 +1,4 @@
-package com.ms.springbootscala.service
+package com.ms.cashloan.service
 
 import java.lang.{Boolean, Long}
 import java.util.List

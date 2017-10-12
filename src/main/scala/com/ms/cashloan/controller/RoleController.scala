@@ -1,7 +1,7 @@
-package com.ms.springbootscala.controller
+package com.ms.cashloan.controller
 
-import com.ms.springbootscala.entities.Role
-import com.ms.springbootscala.service.RoleService
+import com.ms.cashloan.entities.Role
+import com.ms.cashloan.service.RoleService
 import io.swagger.annotations.ApiOperation
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.{RequestMapping, RequestMethod, RestController}

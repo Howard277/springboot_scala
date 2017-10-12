@@ -1,4 +1,4 @@
-package com.ms.springbootscala.config
+package com.ms.cashloan.config
 
 import java.sql.SQLException
 

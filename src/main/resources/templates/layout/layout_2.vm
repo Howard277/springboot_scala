@@ -1,0 +1,8 @@
+<html>
+<head>
+    <title>$title</title>
+    #parse('/layout/resources.vm')
+</head>
+<body class="layui-layout-body">
+</body>
+</html>
